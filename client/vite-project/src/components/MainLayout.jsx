@@ -6,13 +6,13 @@ const MainLayout = ({ children }) => {
       {/* Background image */}
       <div
         className="fixed inset-0 h-screen w-screen bg-cover bg-center bg-no-repeat z-0"
-        style={{ backgroundImage: "url(/assets/bg.jpg)" }}
+        style={{ backgroundImage: "url(assets/bg.jpg)" }}
       ></div>
 
       {/* Overlay */}
       <div
         className="fixed inset-0 h-screen w-screen opacity-60 z-1 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url(/assets/bgdark.png)" }}
+        style={{ backgroundImage: "url(assets/bgdark.png)" }}
       ></div>
 
       {/* Left Sidebar */}
@@ -21,7 +21,7 @@ const MainLayout = ({ children }) => {
           {[...Array(5)].map((_, i) => (
             <img
               key={i}
-              src={`/assets/sp${i + 1}.png`}
+              src={`assets/sp${i + 1}.png`}
               alt={`Icon ${i + 1}`}
               style={{
                 width: "6.3vh",
@@ -35,7 +35,7 @@ const MainLayout = ({ children }) => {
           {[...Array(2)].map((_, i) => (
             <img
               key={i}
-              src={`/assets/sp${i + 1}.svg`}
+              src={`assets/sp${i + 1}.svg`}
               alt={`Icon ${i + 1}`}
               style={{
                 width: "4vh",
@@ -49,7 +49,7 @@ const MainLayout = ({ children }) => {
         </div>
         <div className="flex flex-col gap-3 mt-4 bottom-50 justify-between items-center">
           <img
-            src="/assets/sp3.svg"
+            src="assets/sp3.svg"
             alt="sp3"
             style={{
               width: "2vh",
@@ -60,7 +60,7 @@ const MainLayout = ({ children }) => {
             }}
           />
           <img
-            src="/assets/sp4.svg"
+            src="assets/sp4.svg"
             alt="sp3"
             style={{
               width: "2vh",
@@ -86,7 +86,7 @@ const MainLayout = ({ children }) => {
         {[1, 2, 3].map((num) => (
           <img
             key={num}
-            src={`/assets/spr${num}.png`}
+            src={`assets/spr${num}.png`}
             alt={`Right Icon ${num}`}
             style={{
               height: "6vh",

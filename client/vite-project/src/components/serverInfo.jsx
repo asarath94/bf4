@@ -6,7 +6,7 @@ function ServerInfo() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/server-info")
+      .get("https://bf4-0g7x.onrender.com/api/server-info")
       .then((response) => setInfo(response.data))
       .catch((err) => console.error("Failed to fetch server info:", err));
   }, []);
